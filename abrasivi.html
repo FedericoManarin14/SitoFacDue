@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abrasivi | FAC DUE s.r.l.</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- ========================================================
+       HEADER
+       ======================================================== -->
+  <header class="site-header">
+    <div class="logo-bar">
+      <a href="index.html">
+        <img src="images/logo.png" alt="FAC DUE s.r.l.">
+      </a>
+    </div>
+    <nav class="nav-bar">
+      <ul class="nav-links">
+        <li><a href="chi-siamo.html">Chi Siamo</a></li>
+        <li><a href="collanti.html">Collanti</a></li>
+        <li><a href="abrasivi.html" class="active">Abrasivi</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+      </ul>
+      <span class="nav-search">&#128269;</span>
+      <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+      <ul class="mobile-menu" id="mobile-menu">
+        <li><a href="chi-siamo.html">Chi Siamo</a></li>
+        <li><a href="collanti.html">Collanti</a></li>
+        <li><a href="abrasivi.html">Abrasivi</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ========================================================
+       SECTION 1: PAGE TITLE
+       ======================================================== -->
+  <div class="abrasivi-title">
+    <h1>Abrasivi</h1>
+  </div>
+
+  <!-- ========================================================
+       SECTION 2: CATEGORY FILTER BAR
+       ======================================================== -->
+  <div class="filter-bar">
+    <span class="filter-label">Categorie</span>
+    <div class="filter-btns">
+      <button class="filter-btn active" data-filter="mastici-e-protettivi">Mastici e Protettivi</button>
+      <button class="filter-btn" data-filter="incisione-e-foratura">Incisione e Foratura</button>
+      <button class="filter-btn" data-filter="taglio">Taglio</button>
+      <button class="filter-btn" data-filter="nastri-e-rotoli-abrasivi">Nastri e Rotoli Abrasivi</button>
+      <button class="filter-btn" data-filter="lucidare">Lucidare</button>
+      <button class="filter-btn" data-filter="mole-e-tazze">Mole e Tazze</button>
+      <button class="filter-btn" data-filter="varie">Varie</button>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       SECTION 3: PRODUCT GRID
+       ======================================================== -->
+  <section class="product-grid-section">
+    <div class="container">
+      <div class="product-grid">
+
+        <a href="#" class="product-card" data-category="taglio">
+          <img src="images/abrasivi-product.jpg" alt="Abrasivi A" class="product-card-img">
+          <div class="product-card-info">
+            <div class="product-card-name">Abrasivi A</div>
+            <div class="product-card-code">Cod. 000000</div>
+          </div>
+        </a>
+
+        <a href="#" class="product-card" data-category="lucidare">
+          <img src="images/abrasivi-product.jpg" alt="Abrasivi B" class="product-card-img">
+          <div class="product-card-info">
+            <div class="product-card-name">Abrasivi B</div>
+            <div class="product-card-code">Cod. 000000</div>
+          </div>
+        </a>
+
+        <a href="#" class="product-card" data-category="mole-e-tazze">
+          <img src="images/abrasivi-product.jpg" alt="Abrasivi C" class="product-card-img">
+          <div class="product-card-info">
+            <div class="product-card-name">Abrasivi C</div>
+            <div class="product-card-code">Cod. 000000</div>
+          </div>
+        </a>
+
+        <a href="#" class="product-card" data-category="nastri-e-rotoli-abrasivi">
+          <img src="images/abrasivi-product.jpg" alt="Abrasivi D" class="product-card-img">
+          <div class="product-card-info">
+            <div class="product-card-name">Abrasivi D</div>
+            <div class="product-card-code">Cod. 000000</div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION 4: DOWNLOAD CATALOGHI
+       ======================================================== -->
+  <section class="download-section">
+    <div class="container">
+      <div class="download-title">Download Cataloghi</div>
+      <ul class="download-list">
+        <li><a href="pdf/swediam.pdf" target="_blank">SWEDIAM</a></li>
+        <li><a href="pdf/riellight.pdf" target="_blank">Riel Light</a></li>
+        <li><a href="pdf/sifa.pdf" target="_blank">SIFA</a></li>
+        <li><a href="pdf/sorma.pdf" target="_blank">SORMA</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION 5: CONTATTACI BANNER
+       ======================================================== -->
+  <section class="contact-banner">
+    <a href="contatti.html" class="btn">Contattaci</a>
+  </section>
+
+  <!-- ========================================================
+       FOOTER
+       ======================================================== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col footer-col--logo">
+        <img src="images/logo.png" alt="FAC DUE s.r.l." class="footer-logo">
+        <p class="footer-company-name">FAC DUE s.r.l.</p>
+      </div>
+      <div class="footer-col">
+        <span class="footer-col-label">Sede Legale:</span>
+        <address>
+          Via Toti dal Monte 40, 31053<br>
+          Barbisano
+        </address>
+      </div>
+      <div class="footer-col">
+        <span class="footer-col-label">Magazzino:</span>
+        <address>
+          Via Toti dal Monte 53, 31053<br>
+          Barbisano
+        </address>
+      </div>
+      <div class="footer-col">
+        <span class="footer-col-label">Telefono</span>
+        <a href="tel:+393423836942">+39 3423836942</a>
+      </div>
+      <div class="footer-col">
+        <span class="footer-col-label">Email</span>
+        <a href="mailto:info@facdue.it">info@facdue.it</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

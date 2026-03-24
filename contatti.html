@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contatti | FAC DUE s.r.l.</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- ========================================================
+       HEADER
+       ======================================================== -->
+  <header class="site-header">
+    <div class="logo-bar">
+      <a href="index.html">
+        <img src="images/logo.png" alt="FAC DUE s.r.l.">
+      </a>
+    </div>
+    <nav class="nav-bar">
+      <ul class="nav-links">
+        <li><a href="chi-siamo.html">Chi Siamo</a></li>
+        <li><a href="collanti.html">Collanti</a></li>
+        <li><a href="abrasivi.html">Abrasivi</a></li>
+        <li><a href="contatti.html" class="active">Contatti</a></li>
+      </ul>
+      <span class="nav-search">&#128269;</span>
+      <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+      <ul class="mobile-menu" id="mobile-menu">
+        <li><a href="chi-siamo.html">Chi Siamo</a></li>
+        <li><a href="collanti.html">Collanti</a></li>
+        <li><a href="abrasivi.html">Abrasivi</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ========================================================
+       SECTION 1: MAIN CONTENT
+       ======================================================== -->
+  <section class="contatti-main">
+    <div class="contatti-inner">
+
+      <!-- LEFT: Google Map -->
+      <div class="contatti-map">
+        <!-- ⚠️ REPLACE: Get embed code from Google Maps
+             Search for "FAC DUE SRL Via Toti dal Monte 53, Barbisano TV"
+             on maps.google.com → Share → Embed a map → Copy HTML -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.1234!2d12.39!3d45.91!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sFAC+DUE+SRL!5e0!3m2!1sit!2sit!4v1"
+          width="100%"
+          height="400"
+          style="border:0; display:block;"
+          allowfullscreen=""
+          loading="lazy"
+          title="FAC DUE s.r.l. — Via Toti dal Monte 53, Barbisano (TV)">
+        </iframe>
+      </div>
+
+      <!-- RIGHT: Contact Form -->
+      <div class="contatti-form-col">
+        <h2>Contattaci</h2>
+
+        <!-- ⚠️ REPLACE: YOUR_FORMSPREE_ID with your real form ID from formspree.io
+             Steps: 1) Go to formspree.io  2) Create account  3) New form
+             4) Copy the form ID (e.g. xpzgkwjr) and replace YOUR_FORMSPREE_ID below -->
+        <form id="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Mario Rossi" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="mariorossi@gmail.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contenuto">Contenuto</label>
+            <textarea id="contenuto" name="contenuto" rows="6" placeholder="Chiedici quello che vuoi" required></textarea>
+          </div>
+
+          <button type="submit" id="submit-btn" class="form-submit">Invia</button>
+
+          <div id="form-success" class="form-message form-message--success" style="display:none;">
+            &#10003; Messaggio inviato! Ti risponderemo al più presto.
+          </div>
+
+          <div id="form-error" class="form-message form-message--error" style="display:none;">
+            &#10007; Errore nell'invio. Scrivi a
+            <a href="mailto:info@facdue.it">info@facdue.it</a>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION 2: CONTATTACI BANNER (decorative divider)
+       ======================================================== -->
+  <section class="contact-banner">
+    <a href="contatti.html" class="btn">Contattaci</a>
+  </section>
+
+  <!-- ========================================================
+       FOOTER
+       ======================================================== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col footer-col--logo">
+        <img src="images/logo.png" alt="FAC DUE s.r.l." class="footer-logo">
+        <p class="footer-company-name">FAC DUE s.r.l.</p>
+      </div>
+      <div class="footer-col">
+        <span class="footer-col-label">Sede Legale:</span>
+        <address>
+          Via Toti dal Monte 40, 31053<br>
+          Barbisano
+        </address>
+      </div>
+      <div class="footer-col">
+        <span class="footer-col-label">Magazzino:</span>
+        <address>
+          Via Toti dal Monte 53, 31053<br>
+          Barbisano
+        </address>
+      </div>
+      <div class="footer-col">
+        <span class="footer-col-label">Telefono</span>
+        <a href="tel:+393423836942">+39 3423836942</a>
+      </div>
+      <div class="footer-col">
+        <span class="footer-col-label">Email</span>
+        <a href="mailto:info@facdue.it">info@facdue.it</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
